@@ -93,7 +93,7 @@ class DrinkAndRankGUI:
                                command=lambda cat=category: self.process_category(cat)) # cat calls the process_category function with the category as the argument
             button.pack(pady=5)
             self.menu_buttons.append(button)
-        go_back_button = tk.Button(self.options_frame, text="Go Back",
+        go_back_button = tk.Button(self.options_frame, text="Go Back",width=13, height=2,
                                    command=lambda: self.go_back())  # creates a button to go back to the menu
         go_back_button.pack(pady=10)
         self.function_buttons.append(go_back_button) # Add the button to the list of function buttons

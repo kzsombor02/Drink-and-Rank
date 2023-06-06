@@ -26,28 +26,29 @@ def send_username(username):
             print(f"Age: {user_data['age']}")
             print(f"Points: {user_data['points']}\n")
 
-            if 'friends' in user_data:
+            if 'friends' in user_data: # if the user has friends
                 friend_list = user_data['friends']
                 print(f"{username}'s Friend List:")
-                for friend in friend_list:
-                    print(f"Name: {friend['name']}")
+                for friend in friend_list: # iterate through the friend list
+                    print(f"Name: {friend['name']}") # print the friend's name
 
             friend_name = input("View friend's profile: ")
 
             # Send friend name to the server for retrieval
-            client_socket.sendall(friend_name.encode())
+            client_socket.sendall(friend_name.encode()) # send the friend name to the server
 
             # Receive the response from the server
             data = client_socket.recv(1024)
             response = json.loads(data.decode())
 
             # Process the response
-            if response['success']:
-                friend_data = response['data']
+            if response['success']: # if the response is successful
+                friend_data = response['data'] # get the friend data from the response
                 print("\nFriend Data:")
                 print(f"Name: {friend_data['name']}")
                 print(f"Age: {friend_data['age']}")
                 print(f"Points: {friend_data['points']}")
+                print(f"Rank: {friend_data['rank']}")
 
             compare_points = input("Compare points with friend? (yes/no): ")
 
@@ -60,12 +61,6 @@ def send_username(username):
                 else:
                     print(f"{username} and {friend_data['name']} have the same number of points")
 
-                if user_data['points'] > friend_data['points'] and user_data['rank'] > friend_data['rank']:
-                    print(f"{username} is ranked higher than {friend_data['name']}")
-                elif user_data['points'] < friend_data['points'] and user_data['rank'] < friend_data['rank']:
-                    print(f"{friend_data['name']} is ranked higher than {username}")
-                elif user_data['rank'] == friend_data['rank']:
-                    print(f"{username} and {friend_data['name']} have the same rank")
 
 
             else:

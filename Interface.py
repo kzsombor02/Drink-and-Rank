@@ -3,8 +3,7 @@ import tkinter as tk
 from tkinter import messagebox, simpledialog
 from Database_test import User, Friendships, Drink, Rating, session
 from DrinkAndRank import Database as DB
-import socket
-import threading
+
 
 
 

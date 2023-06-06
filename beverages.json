@@ -1,0 +1,82 @@
+{
+  "Strong Drinks": {
+    "vodka and orange": {
+      "strength": 25,
+      "description": "A distilled alcoholic beverage made from fermented grain mash and fresh orange juice"
+    },
+    "rum and coke": {
+      "strength": 30,
+      "description": "A popular distilled alcoholic beverage made from sugarcane with the timeless coca-cola."
+    },
+    "gin and tonic": {
+      "strength": 20,
+      "description": "A distilled alcoholic beverage flavored with juniper berries and other botanicals with tonic water."
+    }
+  },
+  "Cocktails": {
+    "mai thai": {
+      "strength": 25,
+      "description": "A tropical cocktail made with rum, lime juice, orgeat syrup, and various fruit flavors."
+    },
+    "long island": {
+      "strength": 25,
+      "description": "A mixed drink made with vodka, tequila, rum, gin, triple sec, lemon juice, and cola."
+    },
+    "margarita": {
+      "strength": 20,
+      "description": "A classic cocktail made with tequila, lime juice, and orange liqueur."
+    }
+  },
+  "Light Alcohol": {
+    "beer": {
+      "strength": 6,
+      "description": "A refreshing alcoholic beverage brewed from malted grains."
+    },
+    "wine": {
+      "strength": 10,
+      "description": "An elegant alcoholic beverage made from fermented grapes."
+    },
+    "cider": {
+      "strength": 4,
+      "description": "An alcoholic beverage made from fermented apple juice."
+    },
+    "champagne": {
+      "strength": 12,
+      "description": "An elegant alcoholic beverage made from fermented grapes."
+    },
+    "sake": {
+      "strength": 14,
+      "description": "A traditional Japanese rice wine with a mild and slightly sweet flavor."
+    },
+    "white claw": {
+      "strength": 5,
+      "description": "A popular low-calorie alcoholic seltzer with various fruit flavors."
+    }
+  },
+  "Shots": {
+    "whiskey": {
+      "strength": 40,
+      "description": "A distilled alcoholic beverage made from fermented grain mash."
+    },
+    "tequila": {
+      "strength": 42,
+      "description": "A strong Mexican spirit made from the blue agave plant."
+    },
+    "gin": {
+      "strength": 36,
+      "description": "A spirit flavored with juniper berries and other botanicals."
+    },
+    "vodka": {
+      "strength": 40,
+      "description": "A distilled alcoholic beverage made from fermented grain mash."
+    },
+    "rum": {
+      "strength": 38,
+      "description": "A distilled alcoholic beverage made from sugarcane."
+    },
+    "jager": {
+      "strength": 35,
+      "description": "A German digestif made with 56 herbs and spices."
+    }
+  }
+}
